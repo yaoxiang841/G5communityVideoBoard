@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本地</title>
+    <style>
+		body {
+		    margin: 0;
+		    font-family: Arial, sans-serif;
+		    background-color: #f4f4f4;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    height: 100vh;
+		    overflow: hidden;
+		}
+		
+		.container {
+		    width: 80%;
+		    max-width: 800px;
+		    height: 80%;
+		    background: #fff;
+		    border-radius: 10px;
+		    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		    overflow-y: auto;
+		    padding: 20px;
+		}
+		
+		.post {
+		    background: #f9f9f9;
+		    border-radius: 5px;
+		    margin-bottom: 15px;
+		    padding: 15px;
+		    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		}
+		
+		.post img {
+		    max-width: 100%;
+		    border-radius: 5px;
+		}
+		
+		.post-header {
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 10px;
+		}
+		
+		.post-header img {
+		    width: 40px;
+		    height: 40px;
+		    border-radius: 50%;
+		    margin-right: 10px;
+		}
+		
+		.post-header h3 {
+		    margin: 0;
+		    font-size: 16px;
+		    font-weight: normal;
+		}
+		
+		.post-content {
+		    margin-bottom: 10px;
+		}
+		
+		.post-footer {
+		    display: flex;
+		    justify-content: space-between;
+		    font-size: 14px;
+		    color: #888;
+		}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5F5F5;
+        }
+        .header {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        .menu {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .nav-links div {
+            margin: 0 10px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+        .nav-links div.active {
+            color: red;
+            border-bottom: 2px solid red;
+            padding-bottom: 5px;
+        }
+        .search {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .content {
+            padding: 60px 20px 60px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 40px;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar div {
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+        .nav-bar div.active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="post-header">
+                <img src="a1.jpg" alt="用户头像">
+                <h3>一桶锅包肉</h3>
+            </div>
+            <div class="post-content">
+                <p>法学生研一不上课都干点啥</p>
+            </div>
+            <div class="post-footer">
+                <span>点赞 227</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="a2.jpg" alt="用户头像">
+                <h3>粥粥粥</h3>
+            </div>
+            <div class="post-content">
+                <p>南区|雨夜</p >
+            </div>
+            <div class="post-footer">
+                <span>点赞 676</span>
+            </div>
+        </div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a3.jpg" alt="用户头像">
+		        <h3>舟次</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>新开的公园|好像闯进了宫崎骏电影</p >
+				<img src="h1.jpg" alt="发布图片">
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 128</span>
+		    </div>
+		</div>
+		
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a4.jpg" alt="用户头像">
+		        <h3>子墨</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>花一下午时间集齐了四种54路🚌🚌</p >
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 317</span>
+		    </div>
+		</div>
+		
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a5.jpg" alt="用户头像">
+		        <h3>伊伊爱旅行</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>xx必吃榜之名门烧烤</p >
+				<img src="h2.jpg" alt="发布图片">
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 611</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a6.jpg" alt="用户头像">
+		        <h3>蹦蹦哒哒</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>短剧剧组直招</p> 
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 209</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a7.jpg" alt="用户头像">
+		        <h3>雪后艳阳</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>初秋的xx太适合city walk啦</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 83</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a8.jpg" alt="用户头像">
+		        <h3>爱哭包.</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>学习搭子dd</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 144</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a9.jpg" alt="用户头像">
+		        <h3>杨絮小同学</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>重生之我在xx吃到了超大个pizza！！</p>
+		        <img src="h3.jpg" alt="发布图片">
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 713</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a10.jpg" alt="用户头像">
+		        <h3>惰洋洋是羊</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>xx工作哪里找？？？</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 10</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a11.jpg" alt="用户头像">
+		        <h3>Oxhsuy</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>二手自行车 自用99新</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 56</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a12.jpg" alt="用户头像">
+		        <h3>椒盐皮皮蟹</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>xx火锅店的羊肉底下竟然不是冰块！</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 182</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="a13.jpg" alt="用户头像">
+		        <h3>黑马喽</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>听说十个男的有九个都在玩这个游戏…还有一个就是我…</p>
+				<img src="h4.jpg" alt="发布图片">
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 466</span>
+		    </div>
+		</div>
+    </div>
+</body>
+<div class="header">
+    <div class="menu">菜单</div>
+    <div class="nav-links">
+        <div>关注</div>
+        <div onclick="navigateTo('shouye.html')">发现</div>
+        <div class="active">本地</div>
+    </div>
+    <div class="search">搜索</div>
+</div>
+
+<div class="nav-bar">
+    <div class="active" onclick="navigateTo('shouye.html')">
+        <p>首页</p>
+    </div>
+    <div onclick="navigateTo('shop.html')">
+        <p>购物</p>
+    </div>
+	<div>
+	    <p>➕</p>
+	</div>
+    <div onclick="navigateTo('messages.html')">
+        <p>消息</p>
+    </div>
+    <div onclick="navigateTo('profile.html')">
+        <p>我</p>
+    </div>
+</div>
+
+<script>
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>

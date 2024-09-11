@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+		body {
+		    margin: 0;
+		    font-family: Arial, sans-serif;
+		    background-color: #f4f4f4;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    height: 100vh;
+		    overflow: hidden;
+		}
+		
+		.container {
+		    width: 80%;
+		    max-width: 800px;
+		    height: 80%;
+		    background: #fff;
+		    border-radius: 10px;
+		    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		    overflow-y: auto;
+		    padding: 20px;
+		}
+		
+		.post {
+		    background: #f9f9f9;
+		    border-radius: 5px;
+		    margin-bottom: 15px;
+		    padding: 15px;
+		    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		}
+		
+		.post img {
+		    max-width: 100%;
+		    border-radius: 5px;
+		}
+		
+		.post-header {
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 10px;
+		}
+		
+		.post-header img {
+		    width: 40px;
+		    height: 40px;
+		    border-radius: 50%;
+		    margin-right: 10px;
+		}
+		
+		.post-header h3 {
+		    margin: 0;
+		    font-size: 16px;
+		    font-weight: normal;
+		}
+		
+		.post-content {
+		    margin-bottom: 10px;
+		}
+		
+		.post-footer {
+		    display: flex;
+		    justify-content: space-between;
+		    font-size: 14px;
+		    color: #888;
+		}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5F5F5;
+        }
+        .header {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        .menu {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .nav-links div {
+            margin: 0 10px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+        .nav-links div.active {
+            color: red;
+            border-bottom: 2px solid red;
+            padding-bottom: 5px;
+        }
+        .search {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .content {
+            padding: 60px 20px 60px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 40px;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar div {
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+        .nav-bar div.active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="post-header">
+                <img src="q4.jpg" alt="用户头像">
+                <h3>小鸭</h3>
+            </div>
+            <div class="post-content">
+                <p>📍甘南</p>
+                <p>日出尤其温柔 人间皆是浪漫🎨</p>
+                <img src="t1.jpg" alt="发布图片">
+            </div>
+            <div class="post-footer">
+                <span>点赞 40</span>
+                <span>评论 4</span>
+            </div>
+			<div class="post-footer">
+			    <span>葒蟬靑沣：帅啊</span>
+			</div>
+			<div class="post-footer">
+			    <span>Hhh：是心动的感觉~</span>
+			</div>
+			<div class="post-footer">
+			    <span>腼腆狗：我也想去！</span>
+			</div>
+			<div class="post-footer">
+			    <span>王大哲学家：👍👍👍</span>
+			</div>
+			
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="q1.jpg" alt="用户头像">
+                <h3>旅人</h3>
+            </div>
+            <div class="post-content">
+                <p>📍丽江古城</p >
+                <p>月色与古城的邂逅，每一砖一瓦都诉说着古老的故事。</p >
+            </div>
+            <div class="post-footer">
+                <span>点赞 12</span>
+                <span>评论 3</span>
+            </div>
+            <div class="post-footer">
+                <span>晨曦微光：美得让人心醉！</span>
+            </div>
+            <div class="post-footer">
+                <span>梦旅人：想去，想去，一定要去！</span>
+            </div>
+            <div class="post-footer">
+                <span>星辰大海：丽江的月，古城的梦。</span>
+            </div>
+        </div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q2.jpg" alt="用户头像">
+		        <h3>你猜</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>吓死孩子了</p >
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 23</span>
+		        <span>评论 0</span>
+		    </div>
+		</div>
+		
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q3.jpg" alt="用户头像">
+		        <h3>Merctear</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>就这么水灵灵的过了！</p >
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 48</span>
+		        <span>评论 2</span>
+		    </div>
+		    <div class="post-footer">
+		        <span>自然之声：👍👍👍</span>
+		    </div>
+		    <div class="post-footer">
+		        <span>绿洲守护者：恭喜恭喜</span>
+		    </div>
+		</div>
+		
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q5.jpg" alt="用户头像">
+		        <h3>平凡而不平庸</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>📍古都洛阳</p >
+		        <p>砖瓦间的历史，每一处都承载着厚重的岁月。</p >
+				<img src="t2.jpg" alt="发布图片">
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 36</span>
+		        <span>评论 4</span>
+		    </div>
+		    <div class="post-footer">
+		        <span>历史长廊：👍👍👍</span>
+		    </div>
+		    <div class="post-footer">
+		        <span>时光旅人：每一砖一瓦都透露着故事，让人沉醉。</span>
+		    </div>
+		    <div class="post-footer">
+		        <span>古韵悠扬：下次一定得去！</span>
+		    </div>
+		    <div class="post-footer">
+		        <span>城墙之恋：历史的沉淀，文化的瑰宝。</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q6.jpg" alt="用户头像">
+		        <h3>刺客er</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>拿到驾照啦!!!</p> 
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 10</span>
+		        <span>评论 0</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q7.jpg" alt="用户头像">
+		        <h3>呼噜呼噜响声</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>有没有人打王者</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 20</span>
+		        <span>评论 1</span>
+		    </div>
+			<div class="post-footer">
+			    <span>别点：dd</span>
+			</div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q8.jpg" alt="用户头像">
+		        <h3>吉带小老头</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>修仙 勿扰</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 19</span>
+		        <span>评论 0</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q9.jpg" alt="用户头像">
+		        <h3>帅过彭于晏</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>猜猜这是哪</p>
+		        <img src="t3.jpg" alt="发布图片">
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 26</span>
+		        <span>评论 2</span>
+		    </div>
+			<div class="post-footer">
+			    <span>小蛋：轻轻松松好吧</span>
+			</div>
+			<div class="post-footer">
+			    <span>二哥：来武汉了</span>
+			</div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q10.jpg" alt="用户头像">
+		        <h3>光头强不砍树</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>又是快乐的一天</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 20</span>
+		        <span>评论 0</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q11.jpg" alt="用户头像">
+		        <h3>时间倒流</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>面膜促销 有意者私</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 56</span>
+		        <span>评论 0</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q12.jpg" alt="用户头像">
+		        <h3>加菲猫</h3>
+		    </div>
+		    <div class="post-content">
+		        <img src="t4.jpg" alt="发布图片">
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 34</span>
+		        <span>评论 0</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q13.jpg" alt="用户头像">
+		        <h3>白猫警长</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>真是什么人都有（已屏蔽某些人</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 17</span>
+		        <span>评论 1</span>
+		    </div>
+			<div class="post-footer">
+		        <span>评：咋</span>
+		    </div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q14.jpg" alt="用户头像">
+		        <h3>顺风耳</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>这周末谁陪我去捡破烂</p>
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 24</span>
+		        <span>评论 2</span>
+		    </div>
+			<div class="post-footer">
+			    <span>h:???</span>
+			</div>
+			<div class="post-footer">
+			    <span>小d:???</span>
+			</div>
+		</div>
+		<div class="post">
+		    <div class="post-header">
+		        <img src="q15.jpg" alt="用户头像">
+		        <h3>黑马喽</h3>
+		    </div>
+		    <div class="post-content">
+		        <p>可以当桌面壁纸了</p>
+		        <img src="t5.jpg" alt="发布图片">
+		    </div>
+		    <div class="post-footer">
+		        <span>点赞 46</span>
+		        <span>评论 0</span>
+		    </div>
+		</div>
+    </div>
+</body>
+<div class="header">
+    <div class="menu">菜单</div>
+    <div class="nav-links">
+        <div>关注</div>
+        <div class="active">发现</div>
+        <div onclick="navigateTo('bendi.html')">本地</div>
+    </div>
+    <div class="search">搜索</div>
+</div>
+
+<div class="nav-bar">
+    <div class="active" onclick="navigateTo('shouye.html')">
+        <p>首页</p>
+    </div>
+    <div onclick="navigateTo('shop.html')">
+        <p>购物</p>
+    </div>
+	<div>
+	    <p>➕</p>
+	</div>
+    <div onclick="navigateTo('messages.html')">
+        <p>消息</p>
+    </div>
+    <div onclick="navigateTo('profile.html')">
+        <p>我</p>
+    </div>
+</div>
+
+<script>
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>

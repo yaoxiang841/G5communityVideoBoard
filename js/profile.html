@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的页面</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .profile-header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .profile-header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .profile-header .edit-profile, .profile-header .settings {
+            position: absolute;
+            top: 20px;
+            background-color: #555;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .profile-header .edit-profile {
+            right: 60px;
+        }
+        .profile-header .settings {
+            right: 20px;
+        }
+        .profile-stats {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            padding: 10px 0;
+            margin: 0;
+            font-size: 18px;
+        }
+        .profile-stats div {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .profile-actions {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #fff;
+        }
+        .profile-actions button {
+            background-color: #eee;
+            border: none;
+            padding: 10px;
+            flex-grow: 1;
+        }
+        .profile-tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+        }
+        .profile-tabs div {
+            text-align: center;
+            flex-grow: 1;
+            padding: 10px 0;
+        }
+        .profile-tabs .active {
+            border-bottom: 2px solid red;
+            color: red;
+        }
+		.nav-bar {
+		    display: flex;
+		    justify-content: space-around;
+		    background-color: white;
+		    padding: 10px 0;
+		    position: fixed;
+		    bottom: 0;
+		    width: 100%;
+		    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+		}
+		.nav-bar div {
+		    text-align: center;
+		    font-size: 16px;
+		    color: #333;
+		    cursor: pointer;
+		}
+		.nav-bar div.active {
+		    color: red;
+		}
+    </style>
+</head>
+<body>
+    <div class="profile-header">
+        <img src="touxiang.jpg" alt="头像">
+        <h2>嘿嘿</h2>
+        <p>账号：8888888888<br>IP属地：中国</p>
+        <span class="edit-profile">编辑资料</span>
+        <span class="settings">⚙</span>
+    </div>
+
+    <div class="profile-stats">
+        <div>7<br>关注</div>
+        <div>5<br>粉丝</div>
+        <div>0<br>获赞与收藏</div>
+    </div>
+
+    <div class="profile-actions">
+        <button>购物车</button>
+        <button>创作灵感</button>
+        <button>浏览记录</button>
+    </div>
+
+    <div class="profile-tabs">
+        <div class="active">笔记</div>
+        <div>收藏</div>
+        <div>赞过</div>
+    </div>
+
+    <div class="nav-bar">
+        <div onclick="navigateTo('shouye.html')">
+            <p>首页</p>
+		</div>
+        <div onclick="navigateTo('shop.html')">
+            <p>购物</p>
+        </div>
+    	<div>
+    	    <p>➕</p>
+    	</div>
+        <div onclick="navigateTo('messages.html')">
+            <p>消息</p>
+        </div>
+		<div class="active" onclick="navigateTo('profile.html')">
+		    <p>我</p>
+		</div>
+        </div>
+    </div>
+	<script>
+	    function navigateTo(page) {
+	        window.location.href = page;
+	    }
+	</script>
+</body>
+</html>
